@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class CardTest {
     @Test
-    void cardTest1() {
+    void cardTest() {
         open("http://localhost:9999");
 
         $("[data-test-id=name] input").setValue("Задияров Дмитрий");
