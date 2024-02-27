@@ -30,7 +30,7 @@ public class CardTest {
     }
 
     @AfterEach
-    public void afterEach(){
+    public void afterEach() {
         driver.quit();
         driver = null;
     }
@@ -44,6 +44,6 @@ public class CardTest {
         $("[data-test-id=phone] input").setValue("+12345678900");
         $("[data-test-id=agreement]").click();
         $(".button").click();
-        $(".Success_successBlock__2L3Cw").shouldHave(text(" Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
+        $("[data-test-id=order-success]").shouldHave(text(" Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 }
